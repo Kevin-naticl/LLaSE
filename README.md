@@ -17,32 +17,40 @@ Demo Page: https://kevin-naticl.github.io/LLaSE-Demopage/
 ![Overall Architecture of LLaSE](LLaSE.png)
 
 ## DNSMOS results on DNS Challenge testset
-| Model       | Type          | Testset          | SIG   | BAK   | OVRL  |
-|-------------|---------------|------------------|-------|-------|-------|
-| Unprocessed | -             | syn_with_reverb  | 1.760 | 1.497 | 1.392 |
-|             |               | syn_no_reverb    | 3.392 | 2.618 | 2.483 |
-|             |               | real_recording   | 3.053 | 2.509 | 2.255 |
-| Conv-TasNet | Discriminative | syn_with_reverb  | 2.415 | 2.710 | 2.010 |
-|             |               | syn_no_reverb    | 3.092 | 3.341 | 3.001 |
-|             |               | real_recording   | 3.102 | 2.975 | 2.410 |
-| DEMUCS      | Discriminative | syn_with_reverb  | 2.856 | 3.897 | 2.553 |
-|             |               | syn_no_reverb    | 3.575 | 4.153 | 3.345 |
-|             |               | real_recording   | 3.263 | 4.027 | 2.988 |
-| FRCRN       | Discriminative | syn_with_reverb  | 2.934 | 2.924 | 2.279 |
-|             |               | syn_no_reverb    | 3.578 | 4.133 | 3.335 |
-|             |               | real_recording   | 3.370 | 3.977 | 3.037 |
-| SELM        | Generative    | syn_with_reverb  | 3.160 | 3.577 | 2.695 |
-|             |               | syn_no_reverb    | 3.508 | 4.096 | 3.258 |
-|             |               | real_recording   | 3.591 | 3.435 | 3.124 |
-| MaskSR      | Generative    | syn_with_reverb  | 3.531 | 4.065 | 3.253 |
-|             |               | syn_no_reverb    | 3.586 | 4.116 | 3.339 |
-|             |               | real_recording   | 3.430 | 4.025 | 3.136 |
-| GENSE       | Generative    | syn_with_reverb  | 3.49  | 3.73  | 3.19  |
-|             |               | syn_no_reverb    | 3.65  | 4.18  | 3.43  |
-|             |               | real_recording   | -     | -     | -     |
-| LLaSE       | Generative    | syn_with_reverb  | 3.5933| 4.0958| 3.3272|
-|             |               | syn_no_reverb    | 3.6532| 4.1695| 3.4284|
-|             |               | real_recording   | 3.4998| 4.1002| 3.2369|
+
+以下是对SOTA（State-of-the-Art）结果加粗的表格，SOTA结果是指在每一列（SIG、BAK、OVRL）中表现最好的值：
+
+| Model       | Type          | Testset          | SIG     | BAK     | OVRL    |
+|-------------|---------------|------------------|---------|---------|---------|
+| Unprocessed | -             | syn_with_reverb  | 1.76    | 1.50    | 1.39    |
+|             |               | syn_no_reverb    | 3.39    | 2.62    | 2.48    |
+|             |               | real_recording   | 3.05    | 2.51    | 2.26    |
+| Conv-TasNet | Discriminative | syn_with_reverb | 2.42    | 2.71    | 2.01    |
+|             |               | syn_no_reverb    | 3.09    | 3.34    | 3.00    |
+|             |               | real_recording   | 3.10    | 2.98    | 2.41    |
+| DEMUCS      | Discriminative | syn_with_reverb | 2.86    | 3.90    | 2.55    |
+|             |               | syn_no_reverb    | 3.58    | 4.15    | 3.35    |
+|             |               | real_recording   | 3.26    | 4.03    | 2.99    |
+| FRCRN       | Discriminative | syn_with_reverb | 2.93    | 2.92    | 2.28    |
+|             |               | syn_no_reverb    | 3.58    | 4.13    | 3.34    |
+|             |               | real_recording   | 3.37    | 3.98    | 3.04    |
+| SELM        | Generative    | syn_with_reverb  | 3.16    | 3.58    | 2.70    |
+|             |               | syn_no_reverb    | 3.51    | 4.10    | 3.26    |
+|             |               | real_recording   | **3.59**| 3.44    | 3.12    |
+| MaskSR      | Generative    | syn_with_reverb  | 3.53    | 4.07    | 3.25    |
+|             |               | syn_no_reverb    | 3.59    | 4.12    | 3.34    |
+|             |               | real_recording   | 3.43    | 4.03    | 3.14    |
+| GENSE       | Generative    | syn_with_reverb  | 3.49    | 3.73    | 3.19    |
+|             |               | syn_no_reverb    | **3.65**| **4.18**| **3.43**|
+|             |               | real_recording   | -       | -       | -       |
+| LLaSE       | Generative    | syn_with_reverb  | **3.59**| **4.10**| **3.33**|
+|             |               | syn_no_reverb    | **3.65**| 4.17    | **3.43**|
+|             |               | real_recording   | 3.50    | **4.10**| **3.24**|
+
+### 说明：
+1. **SOTA结果加粗**：在每一列（SIG、BAK、OVRL）中，表现最好的值被加粗显示。
+2. **缺失值**：用“-”表示缺失值。
+3. **LLaSE模型**：在多个测试集上表现优异，是当前SOTA模型。
 
 ## Usage
 
