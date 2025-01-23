@@ -1,4 +1,5 @@
-**LLaSE: Maximizing Acoustic Preservation for LLaMA-based Speech Enhancement**  
+# **LLaSE: Maximizing Acoustic Preservation for LLaMA-based Speech Enhancement**  
+
 Boyi Kang\*¹, Xinfa Zhu\*¹, Zihan Zhang¹, Zhen Ye², Ziqian Wang¹, Lei Xie¹  
 ¹ **Audio, Speech and Language Processing Group (ASLP@NPU)**,  
 School of Computer Science, Northwestern Polytechnical University, Xi’an, China  
