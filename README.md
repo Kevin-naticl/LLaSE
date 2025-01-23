@@ -17,7 +17,32 @@ Demo Page: https://kevin-naticl.github.io/LLaSE-Demopage/
 ![Overall Architecture of LLaSE](LLaSE.png)
 
 ## DNSMOS results on DNS Challenge testset
-
+| Model       | Type          | Testset          | SIG   | BAK   | OVRL  |
+|-------------|---------------|------------------|-------|-------|-------|
+| Unprocessed | -             | syn_with_reverb  | 1.760 | 1.497 | 1.392 |
+|             |               | syn_no_reverb    | 3.392 | 2.618 | 2.483 |
+|             |               | real_recording   | 3.053 | 2.509 | 2.255 |
+| Conv-TasNet | Discriminative | syn_with_reverb  | 2.415 | 2.710 | 2.010 |
+|             |               | syn_no_reverb    | 3.092 | 3.341 | 3.001 |
+|             |               | real_recording   | 3.102 | 2.975 | 2.410 |
+| DEMUCS      | Discriminative | syn_with_reverb  | 2.856 | 3.897 | 2.553 |
+|             |               | syn_no_reverb    | 3.575 | 4.153 | 3.345 |
+|             |               | real_recording   | 3.263 | 4.027 | 2.988 |
+| FRCRN       | Discriminative | syn_with_reverb  | 2.934 | 2.924 | 2.279 |
+|             |               | syn_no_reverb    | 3.578 | 4.133 | 3.335 |
+|             |               | real_recording   | 3.370 | 3.977 | 3.037 |
+| SELM        | Generative    | syn_with_reverb  | 3.160 | 3.577 | 2.695 |
+|             |               | syn_no_reverb    | 3.508 | 4.096 | 3.258 |
+|             |               | real_recording   | 3.591 | 3.435 | 3.124 |
+| MaskSR      | Generative    | syn_with_reverb  | 3.531 | 4.065 | 3.253 |
+|             |               | syn_no_reverb    | 3.586 | 4.116 | 3.339 |
+|             |               | real_recording   | 3.430 | 4.025 | 3.136 |
+| GENSE       | Generative    | syn_with_reverb  | 3.49  | 3.73  | 3.19  |
+|             |               | syn_no_reverb    | 3.65  | 4.18  | 3.43  |
+|             |               | real_recording   | -     | -     | -     |
+| LLaSE       | Generative    | syn_with_reverb  | 3.5933| 4.0958| 3.3272|
+|             |               | syn_no_reverb    | 3.6532| 4.1695| 3.4284|
+|             |               | real_recording   | 3.4998| 4.1002| 3.2369|
 
 ## Usage
 
