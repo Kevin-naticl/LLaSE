@@ -19,9 +19,6 @@ Demo Page: https://kevin-naticl.github.io/LLaSE-Demopage/
 ## DNSMOS results on DNS Challenge testset
 
 
-以下是按照 GitHub 常用的 Markdown 格式整理的指引：
-
-```markdown
 ## Usage
 
 ### 1. Clone the Repo
