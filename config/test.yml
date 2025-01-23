@@ -1,0 +1,20 @@
+test:
+  checkpoint: ./ckpt/best.pt.tar
+  use_cuda: True
+  if_chunk: True # if chunk or not
+  chunk_seconds: 10 #chunk when inference
+  overlap_seconds: 2 #overlap seconds
+
+save:
+  feat_dir: ./decode/feat
+  wav_dir: ./decode/wav
+
+# llama config
+nnet_conf:
+  d_model: 1024
+  nhead: 16
+  num_layers: 12
+  
+datareader:
+  sample_rate: 16000
+  filename: /path/to/your/filelist
