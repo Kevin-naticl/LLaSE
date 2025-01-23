@@ -18,8 +18,6 @@ Demo Page: https://kevin-naticl.github.io/LLaSE-Demopage/
 
 ## DNSMOS results on DNS Challenge testset
 
-以下是对SOTA（State-of-the-Art）结果加粗的表格，SOTA结果是指在每一列（SIG、BAK、OVRL）中表现最好的值：
-
 | Model       | Type          | Testset          | SIG     | BAK     | OVRL    |
 |-------------|---------------|------------------|---------|---------|---------|
 | Unprocessed | -             | syn_with_reverb  | 1.76    | 1.50    | 1.39    |
@@ -46,11 +44,6 @@ Demo Page: https://kevin-naticl.github.io/LLaSE-Demopage/
 | LLaSE       | Generative    | syn_with_reverb  | **3.59**| **4.10**| **3.33**|
 |             |               | syn_no_reverb    | **3.65**| 4.17    | **3.43**|
 |             |               | real_recording   | 3.50    | **4.10**| **3.24**|
-
-### 说明：
-1. **SOTA结果加粗**：在每一列（SIG、BAK、OVRL）中，表现最好的值被加粗显示。
-2. **缺失值**：用“-”表示缺失值。
-3. **LLaSE模型**：在多个测试集上表现优异，是当前SOTA模型。
 
 ## Usage
 
