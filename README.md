@@ -19,32 +19,43 @@ Demo Page: https://kevin-naticl.github.io/LLaSE-Demopage/
 ## DNSMOS results on DNS Challenge testset
 
 
+以下是按照 GitHub 常用的 Markdown 格式整理的指引：
+
+```markdown
 ## Usage
 
-1. Clone the Repo
-> git clone 
+### 1. Clone the Repo
+```bash
+git clone https://github.com/Kevin-naticl/LLaSE.git
+cd LLaSE
+```
 
-> cd LLaSE
+### 2. Install Requirements
+```bash
+conda create -n LLaSE python=3.10
+conda activate LLaSE
+pip install -r requirements.txt
+```
 
-2. Install Requirements
-> conda create -n LLaSE python=3.10
+### 3. Download the Checkpoint from Hugging Face
+You can use the provided shell script to download the checkpoint or manually download it from [Hugging Face](https://huggingface.co/).
 
-> conda activate LLaSE
+```bash
+cd ckpt
+bash download.sh
+```
 
-> pip install -r requirements.txt
+### 4. Inference
+1. Provide the file list in `./config/test.yml`.
+2. Run the inference script:
 
-3. Download the Checkpoint from huggingface.
-You can use the shell for download or download the checkpoint by yourself from //
-> cd ckpt
+```bash
+bash inference.sh
+```
 
-> bash download.sh
+The processed `.wav` files will be saved in `./decode/wav` by default (16k sample rate).
 
-4. Inference 
-give the filelist in ./config/test.yml
+---
 
-> bash inference.sh
-
-Wav after processing will be at ./decode/wav by default in 16k
-
-
-Python module will be available in the future.
+### Future Updates
+- A Python module will be available in the future.
