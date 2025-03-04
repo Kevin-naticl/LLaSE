@@ -18,9 +18,9 @@ Paper: https://arxiv.org/abs/2503.00493
 ## Abstract
 Language Models (LMs) have shown strong semantic understanding and contextual modeling capabilities, which have recently flourished in generative speech enhancement. However, most LM-based speech enhancement approaches focus on semantic information while ignoring the key vital of acoustic information, which leads to acoustic inconsistency after enhancement, including speaker timbre varaitions and intonation. This paper proposes LLaSE, a LLaMA-based language model for Speech Enhancement. To address the challenge of acoustic inconsistency, LLaSE takes continuous representations from WavLM as input and predicts speech tokens from XCodec2, a recently released efficient Codec, maximizing acoustic preservation. Experimental results demonstrate that LLaSE achieves state-of-the-art performance on speech enhancement, offering a robust and scalable solution for speech denoising and quality improvement.
 
-## Demo Page
+## Huggingface
 
-Demo Page: https://kevin-naticl.github.io/LLaSE-Demopage/
+Our checkpoint is [here]https://huggingface.co/BeauKang01/LLaSE.
 
 ![Overall Architecture of LLaSE](LLaSE.png)
 
