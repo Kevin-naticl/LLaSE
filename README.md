@@ -9,6 +9,8 @@ School of Computer Science, Northwestern Polytechnical University, Xi’an, Chin
 ## News
 LLaSE-G1 have been released.
 
+Github: https://github.com/Kevin-naticl/LLaSE-G1
+
 Huggingface: https://huggingface.co/ASLP-lab/LLaSE-G1
 
 Paper: https://arxiv.org/abs/2503.00493
